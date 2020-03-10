@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Elemek elérése,módosítása(DOM)
+        </title>
+    </head>
+    <body>
+        <H1>Document Object Model</H1>
+        <P id="bekezdes">Bekezdés</P>
+        <UL>
+            <LI>1</LI>
+            <LI>2</LI>
+            <LI>3</LI>
+            <LI>4</LI>
+            <LI>5</LI>
+        </UL>
+        <script>
+            var szoveg=document.getElementById("bekezdes");
+            //document.write(szoveg.innerHTML);
+            szoveg.innerHTML="DOM";
+            var cimsor=document.getElementsByTagName("H1");
+            document.write(cimsor[0].innerHTML);
+            
+            var elemek=document.getElementsByTagName("LI");
+            //document.write(elemek.length);
+            document.write("<BR>");
+            for(i=0;i<elemek.length;i++){
+                document.writeln(elemek[i].innerHTML);
+            }
+            
+            
+        </script>
+    
+    </body>
+
+</html>
