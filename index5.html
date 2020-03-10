@@ -1,0 +1,21 @@
+<HTML>
+    <HEAD>
+        <TITLE>Javascript űrlapmezők
+        </TITLE>
+       
+    </HEAD>
+    <BODY>
+       <FORM name="adatok">
+       <input type="text" name="adat1" value="">
+       <input type="text" name="adat2" value="">
+       <input type="button" value="Küldés" onclick=kiir(adat1.value,adat2.value)>   
+        </FORM>
+        <script>
+            function kiir(a,b)
+            {
+                alert(parseInt(a)+parseInt(b));
+            }
+            //document.write(adatok.adat1.value);
+        </script>
+    </BODY>
+</HTML>

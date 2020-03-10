@@ -1,0 +1,43 @@
+<HTML>
+    <HEAD>
+        <TITLE>Javascript alapok 2
+        </TITLE>
+        <SCRIPT>
+            var x=true;
+            document.writeln("<H1>"+x+"</H1>");
+            var szov="Szöveges";
+            var szamok=[1,26,78,43,39,51];
+         
+            for(i=0;i<szamok.length;i++) {
+                document.writeln(szamok[i]+" ");
+            }
+            
+           var nevek=["Ubul","Huba","Zénó","Elek"];
+            //írassuk bele a tömb elemeit a
+            //dokumentumba úgy, hogy listaként
+            //jelenjenek meg a nevek
+            //<UL><LI></LI></UL>
+            document.write("<UL>")
+            for(i=0;i<nevek.length;i++){
+                document.write("<LI>"+nevek[i]+"</LI>");            
+            }
+            document.write("</UL>")
+            function km2ms(km){
+                return km/3.6;
+            }
+            
+            var km=prompt("Km/h:?");
+            alert(km2ms(km));
+            
+            function csakir(){
+                document.write("Blöe");
+            }
+            csakir();
+            
+        </SCRIPT>
+    </HEAD>
+    <BODY>
+       
+        
+    </BODY>
+</HTML>
