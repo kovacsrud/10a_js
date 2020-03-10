@@ -22,11 +22,17 @@
             document.write(cimsor[0].innerHTML);
             
             var elemek=document.getElementsByTagName("LI");
+            //Mennyi az elemek száma?
             //document.write(elemek.length);
             document.write("<BR>");
+            
+            //lista elemeinek a módosítása
             for(i=0;i<elemek.length;i++){
-                document.writeln(elemek[i].innerHTML);
+                elemek[i].innerHTML=parseInt(elemek[i].innerHTML)*2.861;
+                
             }
+            
+            
             
             
         </script>
