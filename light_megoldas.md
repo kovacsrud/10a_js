@@ -73,7 +73,7 @@ Ezeknél a változókon belül az src tartalmazza a kép elérési útvonalát (
 
 Mi a megoldás? Kezeket fel!
 
-Igen, a "/" karakterek mentén felvágjuk az elérési utat, és csak az utolsó elemet használjuk majd fel összehasonlításra. Ezeket eltároljuk külön változókba:
+Igen, a "/" karakterek mentén felvágjuk az elérési utat, ennek eredménye egy tömb, és csak az utolsó elemet használjuk majd fel összehasonlításra. Ezeket eltároljuk külön változókba:
 
 ```javascript
 var bulb_src=bulb.src.split("/");
@@ -84,4 +84,27 @@ bulb_src=bulb_src[bulb_src.length-1];
 
 ```
 
+Már csak egy elágazásra van szükség a be ill. a kikapcsolt állapot megkülönböztetésére. Ha a kikapcsolt állapot az aktuális, akkor betöltjük a bekapcsolt állapotot jelentő képeket az égőhöz illetve a kapcsolóhoz, és fordítva (az egyes <IMG> elemek src paraméterét változtatjuk gyakorlatilag).
 
+```javascript
+ if(bulb_src=="bulb_off.png"){
+            
+     bulb.src="bulb_on.png";
+     kapcsolo.src="kapcsolo_be.png";
+           
+} 
+else {
+            
+      bulb.src="bulb_off.png";
+      kapcsolo.src="kapcsolo_ki.png";
+      
+}
+```
+
+A függvény kész, azonban ahhoz hogy működjön a kapcsolót megjelenítő <IMG> elem onclick eseményéhez hozzá is kell rendelni.
+    
+```HTML
+<img id="kapcsolo" src="kapcsolo_ki.png" onclick="kapcsol()">
+```
+
+Készen is van.
