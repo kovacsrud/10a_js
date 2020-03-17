@@ -64,3 +64,11 @@ A **bulb** változóba beolvassuk a "bulb azonosítójú elemet".
 ```Javascript
 var bulb=document.getElementById("bulb");
 ```
+A **kapcsolo** változóba pedig a "kapcsolo" azonosítójú elemet.
+
+```Javascript
+var kapcsolo=document.getElementById("kapcsolo");
+```
+
+
+
