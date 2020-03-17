@@ -42,3 +42,16 @@ Tartalma a következő legyen:
 
 </HTML>
 ```
+
+A **</TABLE>** alá kerüljön a <SCRIPT></SCRIPT> elem, ebbe kerül a JS függvény.
+
+```HTML
+<SCRIPT>
+    function kapcsol(){
+    
+    
+    }
+
+</SCRIPT>    
+```
+
