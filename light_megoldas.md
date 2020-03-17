@@ -101,7 +101,7 @@ else {
 }
 ```
 
-A függvény kész, azonban ahhoz hogy működjön a kapcsolót megjelenítő <IMG> elem onclick eseményéhez hozzá is kell rendelni.
+A függvény kész mást nem kell írni bele, azonban ahhoz hogy működjön a kapcsolót megjelenítő <IMG> elem onclick eseményéhez hozzá is kell rendelni az alábbi módon.
     
 ```HTML
 <img id="kapcsolo" src="kapcsolo_ki.png" onclick="kapcsol()">
