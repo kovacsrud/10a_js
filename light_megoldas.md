@@ -69,6 +69,19 @@ A **kapcsolo** változóba pedig a "kapcsolo" azonosítójú elemet.
 ```Javascript
 var kapcsolo=document.getElementById("kapcsolo");
 ```
+Ezeknél a változókon belül az src tartalmazza a kép elérési útvonalát (pl. bulb.src). Ügyelni kell arra, hogy annak ellenére, hogy a weboldalban realtív megadással van megadva a kép elérési útja, a változóban teljes elérési utat kapunk, meghajtóval, mappanevekkel, viszont nekünk csak a fájlnév kell.
 
+Mi a megoldás? Kezeket fel!
+
+Igen, a "/" karakterek mentén felvágjuk az elérési utat, és csak az utolsó elemet használjuk majd fel összehasonlításra. Ezeket eltároljuk külön változókba:
+
+```javascript
+var bulb_src=bulb.src.split("/");
+bulb_src=bulb_src[bulb_src.length-1];
+
+ var kapcsolo_src=kapcsolo.src.split("/");
+ kapcsolo_src=kapcsolo_src[kapcsolo_src.length-1];
+
+```
 
 
