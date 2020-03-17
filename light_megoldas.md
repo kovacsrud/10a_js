@@ -55,3 +55,8 @@ A **</TABLE>** alá kerüljön a <SCRIPT></SCRIPT> elem, ebbe kerül a JS függv
 </SCRIPT>    
 ```
 
+Minden további utasítás a függvényen belülre kell hogy kerüljön!
+
+Először meg kell szereznünk azt az információt, hogy jelenleg melyik kép van betöltve. Az egyes képekhez id van rendelve, az égő képét tartalmazó <IMG> elemnél "bulb", a kapcsolónál pedig "kapcsolo" az id értéke.
+    
+    
