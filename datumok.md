@@ -44,4 +44,34 @@ A legfontosabbak:
  - getMilliseconds() -> miliszekundumok, 0-999 közötti érték
  
  
+ Állítsunk össze egy emészthetőbb dátumot!
+ **Év:**
  
+ ```js
+ var ev=datum.getFullYear();
+ ```
+**Hónap**, itt egyet hozzá kell adnunk a kapott értékhez.
+
+```js
+var honap=datum.getMonth()+1;
+```
+**Nap**
+
+```js
+var nap=datum.getDate();
+```
+**Óra**
+```js
+var ora=datum.getHours();
+```
+
+**Perc**
+```js
+var perc=datum.getMinutes();
+```
+
+**Másodperc**
+```js
+var masodperc=datum.getSeconds();
+```
+
