@@ -75,3 +75,17 @@ var perc=datum.getMinutes();
 var masodperc=datum.getSeconds();
 ```
 
+**Kiírás a weboldalba**
+```js
+document.write(ev);
+document.write("-");
+document.write(honap);
+document.write("-");
+document.write(nap);
+document.write(" ");
+document.write(ora);
+document.write(":");
+document.write(perc);
+document.write(":");
+document.write(masodperc);
+```
