@@ -28,3 +28,20 @@ var datum=new Date();
 document.write(datum);
 
 ```
+Az eredmmény egy hasonló szöveg lesz:
+**Wed Mar 25 2020 10:39:26 GMT+0100 (közép-európai téli idő)**
+
+Ebben benne van a lényeg, de nem tűnik túl használhatónak, hiszen mi van, ha csak az év kell, stb.
+
+Számos függvény van, amellyel idővel kapcsolatos információkat lehet lekérdezni. 
+A legfontosabbak:
+ - getFullYear() ->évek lekérdezése
+ - getMonth() -> a hónap számmal, 0-11 közötti érték, tehát a valós hónaphoz a kapott értékhet 1-et hozzá kell adni!
+ - getDate() -> a nap száma, 1-31 közötti érték
+ - getHours() -> az aktuális óra, 0-23 közötti érték
+ - getMinutes() -> percek, 0-59 közötti érték
+ - getSeconds() -> másodpercek, 0-59 közötti érték
+ - getMilliseconds() -> miliszekundumok, 0-999 közötti érték
+ 
+ 
+ 
