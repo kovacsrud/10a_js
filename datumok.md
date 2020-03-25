@@ -21,3 +21,8 @@ A kiinduló weboldal:
     </BODY>
 </HTML>
 ```
+A **Script** tag be írjuk be a következő utasítást:
+
+```javascript
+var datum=new Date();
+```
