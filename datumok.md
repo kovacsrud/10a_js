@@ -89,3 +89,9 @@ document.write(perc);
 document.write(":");
 document.write(masodperc);
 ```
+
+***Az eredmény: 2020-3-25 10:39:26***
+
+Látható, hogy a hónap sima 3-ként jelenik meg, ami nem túl szép.
+Az Ön feladata, hogy megoldja, hogy a 10-nél kisebb hónapok esetében jelenjen meg a 0 a hónap értéke előtt, tehát 3 helyett 03!
+
