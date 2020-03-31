@@ -184,3 +184,9 @@ function ido() {
 
 }
 ```
+Már csak annyi kell, hogy beállítsuk, hogy az ido() függvény minden egyes másodpercben fusson le:
+
+```js
+setInterval(ido,1000);
+```
+Kész is van.
