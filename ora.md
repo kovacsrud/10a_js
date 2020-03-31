@@ -143,3 +143,44 @@ function ido() {
   //ide jöjjön az összes művelet
 }
 ```
+
+A kész **ido()** függvény így kell hogy kinézzen:
+
+```js
+function ido() {
+
+  var datum = new Date();
+  var ev = datum.getFullYear();
+  var honap = datum.getMonth() + 1;
+
+    if (parseInt(honap) < 10) {
+      honap = "0" + honap;
+    }
+    
+  var nap = datum.getDate();
+  var ora = datum.getHours();
+        
+    if(parseInt(ora)<10){
+      ora = "0" + ora;
+    }
+        
+  var perc = datum.getMinutes();
+        
+    if(parseInt(perc)<10){
+       perc = "0" + perc;
+    }
+        
+  var masodperc = datum.getSeconds();
+    if(parseInt(masodperc)<10){
+       masodperc = "0" + masodperc;
+    }
+        
+  document.getElementById("ev").innerHTML=ev;
+  document.getElementById("honap").innerHTML=honap;
+  document.getElementById("nap").innerHTML=nap;
+  document.getElementById("ora").innerHTML=ora;
+  document.getElementById("perc").innerHTML=perc;
+  document.getElementById("masodperc").innerHTML=masodperc;
+
+}
+```
