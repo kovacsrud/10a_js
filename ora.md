@@ -111,4 +111,9 @@ var masodperc = datum.getSeconds();
     masodperc = "0" + masodperc;
   }
 ```           
+A változók megvannak, nézzük hogy hogyan tudjuk a weboldalba beleírni a változó értékét. A weboldalban minden elemnek adtunk **id**-t, hogy könnyen elérhetőek legyenek, ezt használjuk fel. A **getElementById** segítségével tudunk **id** alapján elérni és módosítani egy elemet. Maga az érték az **innerHTML**-ben található, ez lekérdezhető, vagy éppen átírható. A következő utasítással a weboldalban szereplő **ev** értékét az előbb létrehozott változó értékére módosítjuk:
+
+```js
+document.getElementById("ev").innerHTML=ev;
+```
 
