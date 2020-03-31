@@ -72,4 +72,12 @@ A dátumból kiolvassuk az évet:
 ```js
  var ev = datum.getFullYear();
 ```
+Ezt követi a hónap, azonban a hónap esetében(is) szembesülünk azzal, hogy 10-nél kisebb értékek esetén, nincs 0 az érték előtt, tehát pl. 03 helyett csak 3-at kapunk, ha március van. Ez így nem szép, gondoskodjuk a bevezető 0-ról is! Ne feledük, hogy a hónaphoz 1-et hozzá kell adni.
 
+```js
+var honap = datum.getMonth() + 1;
+
+  if (parseInt(honap) < 10) {
+    honap = "0" + honap;
+  }
+```
