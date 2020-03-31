@@ -81,3 +81,8 @@ var honap = datum.getMonth() + 1;
     honap = "0" + honap;
   }
 ```
+A nap egyszerű:
+
+```js
+var nap = datum.getDate();
+``` 
