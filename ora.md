@@ -95,3 +95,20 @@ var ora = datum.getHours();
     ora = "0" + ora;
   }
 ```
+Percek:
+```js
+var perc = datum.getMinutes();
+        
+  if(parseInt(perc)<10){
+      perc = "0" + perc;
+  }
+```
+
+Másodpercek:
+```js
+var masodperc = datum.getSeconds();
+  if(parseInt(masodperc)<10){
+    masodperc = "0" + masodperc;
+  }
+```           
+
