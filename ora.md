@@ -86,3 +86,12 @@ A nap egyszerű:
 ```js
 var nap = datum.getDate();
 ``` 
+Az óra hasonló, itt is gondoskodni kell bevezető 0-ról, ha az érték 10 alatt van:
+
+```js
+var ora = datum.getHours();
+        
+  if(parseInt(ora)<10) {
+    ora = "0" + ora;
+  }
+```
