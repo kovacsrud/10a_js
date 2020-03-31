@@ -23,6 +23,41 @@ h1{
     color: brown;
 }
 ```
-  
+A következő legyen az ***ora.html*** fájl létrehozása:
+
+```html
+<HTML>
+
+<HEAD>
+    <TITLE>
+        Dátumok,dátumok mindenütt.
+    </TITLE>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</HEAD>
+
+<BODY>
+    <H1>Óra JavaScript-ben</H1>
+    <DIV id="fokeret">
+        <P>
+            <SPAN id="ev">2000</SPAN>
+            <SPAN id="elvalaszto">-</SPAN>
+            <SPAN id="honap">01</SPAN>
+            <SPAN id="elvalaszto">-</SPAN>
+            <SPAN id="nap">01</SPAN>
+        </P>
+        
+            <P>
+                <SPAN id="ora">01</SPAN>
+                <SPAN id="elvalaszto">:</SPAN>
+                <SPAN id="perc">10</SPAN>
+                <SPAN id="elvalaszto">:</SPAN>
+                <SPAN id="masodperc">22</SPAN>
+            </P>
+        
+    </DIV>
+</BODY
+</HTML>  
+```
+Látszik, hogy a \<HEAD> részben lévő \<LINK> utasítás betölti a stíluslapot. Az oldalban egyenlőre azok az idő értékek jelennek meg, amik kézzel be lettek írva, ennek pusztán csak annyi jelentősége van, hogy látjuk a stíluslap által alkalmazott formázásokat.
 
 
