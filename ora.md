@@ -117,3 +117,12 @@ A változók megvannak, nézzük hogy hogyan tudjuk a weboldalba beleírni a vá
 document.getElementById("ev").innerHTML=ev;
 ```
 
+A többit is az előzőhöz hasonlóan:
+
+```js
+document.getElementById("honap").innerHTML=honap;
+document.getElementById("nap").innerHTML=nap;
+document.getElementById("ora").innerHTML=ora;
+document.getElementById("perc").innerHTML=perc;
+document.getElementById("masodperc").innerHTML=masodperc;
+```
