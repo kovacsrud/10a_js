@@ -5,7 +5,24 @@ A feladat, hogy egy sorban látszódjon az **év-hónap-nap** információ, alat
 
 Az infókat egy keretbe tesszük (\<DIV> tag), ezen belül egy-egy bekezdés lesz (\<P>), és a bekezdéseken belül \<SPAN> tagokkal biztosítjuk a karakterformázást. Minden elemhez id-t rendelünk, hogy a script-ből könnyen el lehessen érni őket.
   
-  
+Az első feladat, hogy létre kell hozni egy stíluslapot ***style.css***  néven. A tartalma a következő legyen:
+
+```css
+#fokeret {
+    margin: auto;
+    width: 500px;
+    font-size: 50;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:bold;
+    color: burlywood;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+```
   
 
 
