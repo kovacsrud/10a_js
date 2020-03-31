@@ -134,3 +134,12 @@ például:
 ```js
 setInterval(ido,1000);
 ```
+Ebben az esetben az **ido** nevű függvény hajtódna végre, minden másodpercben (a setInterval-nél milisec-ben kell megadni a kívánt értéket)
+
+Viszont jelenleg nincsen **ido** nevű függvény. Létre kell hoznunk, és minden műveletet ebbe bele kell tennünk.
+
+```js
+function ido() {
+  //ide jöjjön az összes művelet
+}
+```
