@@ -60,4 +60,16 @@ A következő legyen az ***ora.html*** fájl létrehozása:
 ```
 Látszik, hogy a \<HEAD> részben lévő \<LINK> utasítás betölti a stíluslapot. Az oldalban egyenlőre azok az idő értékek jelennek meg, amik kézzel be lettek írva, ennek pusztán csak annyi jelentősége van, hogy látjuk a stíluslap által alkalmazott formázásokat.
 
+A \</DIV> után hozzuk létre a \<SCRIPT></SCRIPT> tagot, minden ami ezután következik, ebbe kerüljön!
+
+Először le kell kérdezni a dátumot:
+
+```javascript
+ var datum = new Date();
+```
+A dátumból kiolvassuk az évet:
+
+```js
+ var ev = datum.getFullYear();
+```
 
