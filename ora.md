@@ -126,3 +126,6 @@ document.getElementById("ora").innerHTML=ora;
 document.getElementById("perc").innerHTML=perc;
 document.getElementById("masodperc").innerHTML=masodperc;
 ```
+Így már az oldal letöltésekor aktuális időt láthatjuk. Minden egyes újratöltéskor látni fogjuk, hogy frissül az idő értéke. 
+Ez már majdnem jó, de ugye nem akarjuk kézzel frissíteni az oldalt. Vajon hogyan lehet elérni azt, hogy ez bizonyos időközönként automatikusan megtörténjen? 
+A megoldás a JavaScript **setInterval** időzítő funkciója. Ez egy függvényt automatikusan meg tud hívni, a megadott időközönként, pl. másodpercenként.
