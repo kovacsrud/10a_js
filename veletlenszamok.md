@@ -39,3 +39,7 @@ Mi a helyzet, ha 1 fölötti számot szeretnénk? Változtassuk meg a függvény
 ```js
 document.write(Math.floor(Math.random()*10));  
 ```
+Így már sokkal jobb, 0 és 9 közötti egész számot kapunk. Mi a helyzet, ha 1 és 10 közötti számot szeretnénk? Hozzá kell adni egyet!
+```js
+document.write(Math.floor(Math.random()*10)+1);  
+```
