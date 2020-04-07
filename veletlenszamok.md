@@ -59,3 +59,8 @@ document.write(Math.floor(Math.random()*90)+10);
 ```js
 document.write(Math.floor(Math.random()*40)+10);
 ```
+
+Általánosságban megfogalmazhatjuk a következő összefüggést, ha min az alsó határ, és max a felső határ, akkor a véletlenszám generálás logikája:
+
+**Math.floor(Math.random(max-min)+min)**
+
