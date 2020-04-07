@@ -64,3 +64,4 @@ document.write(Math.floor(Math.random()*40)+10);
 
 **Math.floor(Math.random(max-min)+min)**
 
+Készítsen egy függvényt, amely megadott határok pl. (10,30) közötti véletlen egész számot ad vissza!
