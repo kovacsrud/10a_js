@@ -43,3 +43,11 @@ document.write(Math.floor(Math.random()*10));
 ```js
 document.write(Math.floor(Math.random()*10)+1);  
 ```
+0 és 100 között?
+```js
+document.write(Math.floor(Math.random()*101));  
+```
+1 és 100 között?
+```js
+document.write(Math.floor(Math.random()*100)+1);  
+```
