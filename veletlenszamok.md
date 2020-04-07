@@ -37,5 +37,5 @@ Mi a helyzet, ha 1 fölötti számot szeretnénk? Változtassuk meg a függvény
 Így már jobb, de a szám nem egész szám, pedig a legtöbb esetben ilyenre van szükség. Viszont lehet a JS-ben is használni kerekítést, az segíthet.
 
 ```js
-document.write(Math.floor(Math.random()*10)); 
+document.write(Math.floor(Math.random()*10));  
 ```
