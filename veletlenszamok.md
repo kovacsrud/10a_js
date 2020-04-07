@@ -51,3 +51,11 @@ document.write(Math.floor(Math.random()*101));
 ```js
 document.write(Math.floor(Math.random()*100)+1);  
 ```
+10 és 100 között?
+```js
+document.write(Math.floor(Math.random()*90)+10);
+```
+10 és 50 között?
+```js
+document.write(Math.floor(Math.random()*40)+10);
+```
