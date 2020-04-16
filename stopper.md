@@ -6,7 +6,7 @@ A megjelenített idő az **óra:perc:másodperc** formában fog kinézni.
 Az infókat egy keretbe tesszük (\<DIV> tag), ezen belül egy-egy bekezdés lesz (\<P>), és a bekezdéseken belül \<SPAN> tagokkal biztosítjuk a karakterformázást. Minden elemhez id-t rendelünk, hogy a script-ből könnyen el lehessen érni őket.
 
 Az előző feladatnál létrehozott stílusfájlt használjuk, nem muszáj újra elkészíteni, ha megvan.
-Ha nincs meg, akkor létre kell hozni ***style.css***  néven. A tartalma a következő legyen:
+Ha nincs meg, akkor létre kell hozni ***style.css***  néven. A tartalmát kiegészítjük néhány új dologgal, a **reszido** és a **gomb** id-k hoz rendelünk egy-egy stílust.
 
 ```css
 #fokeret {
@@ -17,6 +17,21 @@ Ha nincs meg, akkor létre kell hozni ***style.css***  néven. A tartalma a köv
     font-family: sans-serif;
     font-weight:bold;
     color: burlywood;
+}
+
+#reszido {
+    margin: auto;
+    width: 500px;
+    font-size: 20;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:bold;
+    color: burlywood;
+}
+
+#gomb {
+	margin:auto;
+    text-align: center;
 }
 
 h1{
