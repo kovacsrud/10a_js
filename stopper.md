@@ -79,7 +79,7 @@ A **fokeret** id-vel jelzett \<DIV> tartalmazza az aktuális időt. A gombokat e
 
 A \</DIV> után hozzuk létre a \<SCRIPT></SCRIPT> tagot, minden ami ezután következik, ebbe kerüljön!
 
-Először le kell kérdezni a dátumot:
+Három függvényt készítünk. Az első feladata az idő lekérdezése, és frissítése. A második függvény segítségével rögzítjük a részidőt, a harmadik függvény pedig a részidők törlését fogja elvégezni.
 
 ```javascript
  var datum = new Date();
