@@ -75,6 +75,8 @@ A következő legyen az ***stopper.html*** fájl létrehozása:
 ```
 Látszik, hogy a \<HEAD> részben lévő \<LINK> utasítás betölti a stíluslapot. Az oldalban egyenlőre azok az idő értékek jelennek meg, amik kézzel be lettek írva, ennek pusztán csak annyi jelentősége van, hogy látjuk a stíluslap által alkalmazott formázásokat.
 
+A **fokeret** id-vel jelzett \<DIV> tartalmazza az aktuális időt. A gombokat egy **gomb** id-vel ellátott \<DIV> jelzi. A részidők majd a **reszido** id-vel azonosított \<DIV>-be kerülnek.
+
 A \</DIV> után hozzuk létre a \<SCRIPT></SCRIPT> tagot, minden ami ezután következik, ebbe kerüljön!
 
 Először le kell kérdezni a dátumot:
