@@ -52,7 +52,24 @@ A következő legyen az ***stopper.html*** fájl létrehozása:
 </HEAD>
 
 <BODY>
-    
+<H1>Óra JavaScript-ben</H1>
+    <DIV id="fokeret">
+        
+        <P>
+            <SPAN id="ora">00</SPAN>
+            <SPAN id="elvalaszto">:</SPAN>
+            <SPAN id="perc">00</SPAN>
+            <SPAN id="elvalaszto">:</SPAN>
+            <SPAN id="masodperc">00</SPAN>
+
+        </P>
+
+    </DIV>
+    <div id=gomb><input type="button" name="Részidő" value="Részidő" onclick=reszido()>
+    <input type="button" name="Törlés" value="Törlés" onclick=reszido_torles()></div>
+    <div id=reszido>
+        
+    </div>    
 </BODY
 </HTML>  
 ```
