@@ -1,11 +1,12 @@
 # Stopper készítés
 
 Ez a honlap egy minimalista stoppert fog megvalósítani.
-A feladat, hogy egy sorban látszódjon az **év-hónap-nap** információ, alatta pedig az **óra:perc:másodperc**. Az óra nézzen ki rendes órának, tehát az értékek megfelelően változzanak, az oldal újratöltése nélkül.
+A megjelenített idő az **óra:perc:másodperc** formában fog kinézni. 
 
 Az infókat egy keretbe tesszük (\<DIV> tag), ezen belül egy-egy bekezdés lesz (\<P>), és a bekezdéseken belül \<SPAN> tagokkal biztosítjuk a karakterformázást. Minden elemhez id-t rendelünk, hogy a script-ből könnyen el lehessen érni őket.
-  
-Az első feladat, hogy létre kell hozni egy stíluslapot ***style.css***  néven. A tartalma a következő legyen:
+
+Az előző feladatnál létrehozott stílusfájlt használjuk, nem muszáj újra elkészíteni, ha megvan.
+Ha nincs meg, akkor létre kell hozni ***style.css***  néven. A tartalma a következő legyen:
 
 ```css
 #fokeret {
