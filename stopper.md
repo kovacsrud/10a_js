@@ -121,9 +121,30 @@ Az idő meghatározása nagyon hasonló, csak éppen 0 másodpercről nő az id�
         }
 ```
 
+A következő feladat az aktuális időpont lekérdezése és új elembe helyezése. Itt bejönnek a képbe új dolgok.
+Tanulták (tanítottam), hogy a HTML egy fa struktúrájú dokumentum. Az egyes elemeknek lehetnek szülő ill. gyerek elemeik is.
+A weboldalban már van egy reszido azonosítójú <\DIV> elem, ami pillanatnyilag üres. Ehhez az elemhez bármikor adhatunk hozzá gyerek elemeket. A gyerek elem egy bekezdés lesz, amelyben az az idő szerepel majd, amikor lenyomtuk  **Részidő** feliratú gombot.
+Létrehozunk egy függvénnyel új elemeket, majd ezt mint gyerek elemet hozzáadjuk a részidőhöz. Ezt valósítja meg a **reszido()** függvény. 
+A **document.createElement()** paranccsal tudunk új elemet létrehozni, és az elemnév.appendChild() paranccsal egy elem gyerek elemeként hozzáadni.
+
 
 ```js
+ function reszido() {
+        var idodiv=document.getElementById("reszido");
+        var reszido=document.createElement("p");
+        var reszora=document.createElement("span");
+        var reszperc=document.createElement("span");
+        var reszms=document.createElement("span");      
+	
+        reszora.innerHTML=ora+":";
+        reszperc.innerHTML=perc+":";
+        reszms.innerHTML=masodperc;
+        reszido.appendChild(reszora);
+        reszido.appendChild(reszperc);
+	reszido.appendChild(reszms);
+	idodiv.appendChild(reszido);
 
+}
 ```
 
 
