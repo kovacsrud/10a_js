@@ -147,17 +147,33 @@ A **document.createElement()** paranccsal tudunk új elemet létrehozni, és az 
 }
 ```
 
+### Részidők törlése
+
+Ha törölni kívánjuk a tárolt részidőket, akkor a **reszido** \<DIV> gyerek elemeit kell eltávolítani. Lekérdezzük az elemet, meghatározzuk a benne lévő bekezdéseket \<P> , és azokat a **removeChild()** paranccsal töröljük. Vajon miért visszafelé halad a ciklus az elemeken?
 
 például:
-```js
-setInterval(ido,1000);
-```
-
-```
-
-
 
 ```js
-setInterval(ido,1000);
+ function reszido_torles()
+        {
+            var reszido=document.getElementById("reszido");
+            var reszidok=reszido.getElementsByTagName("p");
+            
+            console.log("Elemek száma:"+reszidok.length);
+            
+            for (i=reszidok.length-1;i>=0;i--){
+               
+                reszido.removeChild(reszidok[i]);
+                
+            }
+        }
+
+```
+
+Végül, indítsuk a stoppert:
+
+
+```js
+setInterval(stopper, 1000);
 ```
 Kész is van.
