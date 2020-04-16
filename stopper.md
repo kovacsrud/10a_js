@@ -77,6 +77,8 @@ Látszik, hogy a \<HEAD> részben lévő \<LINK> utasítás betölti a stílusla
 
 A **fokeret** id-vel jelzett \<DIV> tartalmazza az aktuális időt. A gombokat egy **gomb** id-vel ellátott \<DIV> jelzi. A részidők majd a **reszido** id-vel azonosított \<DIV>-be kerülnek.
 
+Az is látszik, hogy a gombokhoz már hozzá vannak rendelve az egyes függvények az **onclick** eseményhez. Ügyelni kell arra, hogy a függvények neve ne stimmeljen, mert csak akkor működik majd!
+
 A \</DIV> után hozzuk létre a \<SCRIPT></SCRIPT> tagot, minden ami ezután következik, ebbe kerüljön!
 
 Három függvényt készítünk. Az első feladata az idő lekérdezése, és frissítése. A második függvény segítségével rögzítjük a részidőt, a harmadik függvény pedig a részidők törlését fogja elvégezni.
