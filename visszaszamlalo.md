@@ -35,3 +35,29 @@ A kiinduló HTML oldal:
 </HTML>
 
 ```
+
+Nézzük, mi kerül a Script-be! 
+Először is be kell kérni a másodperc értéket, ahonnan vissza kell számolni, valamint azt egy változóba el kell tárolni, és a weboldalba is bele kell írni.
+
+```js
+var startMasodperc=prompt("Honnan számolunk vissza?");
+document.getElementById("masodperc").innerHTML=startMasodperc;
+```
+Ezt követi a **visszaszamlalo()** nevű függvény. Egyszerű a működése, a masodperc id-vel ellátott elemből kiolvassuk az aktuális másodperc értéket, csökkentjük, visszaírjuk. Ha elérte a nullát, akkor megváltoztatjuk a háttérszínt.
+
+```js
+function visszaszamlalo() {
+
+     masodperc = document.getElementById("masodperc").innerHTML;
+     masodperc = parseInt(masodperc);
+
+     masodperc--;
+            
+     if (masodperc==0){
+         document.body.style.backgroundColor="red";
+         clearInterval(szamlalas);
+     }
+                                   
+     document.getElementById("masodperc").innerHTML=masodperc;
+}
+```
