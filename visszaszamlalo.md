@@ -61,3 +61,10 @@ function visszaszamlalo() {
      document.getElementById("masodperc").innerHTML=masodperc;
 }
 ```
+Végül, indítjuk a számlálót:
+
+```js
+ var szamlalas=setInterval(visszaszamlalo, 1000);
+```
+Látható, hogy itt a setInterval(visszaszamlalo,1000)-is kap tulajdonképpen egy azonosítót, amire tudunk hivatkozni a leállításkor.
+
