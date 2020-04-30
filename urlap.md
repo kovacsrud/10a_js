@@ -43,3 +43,16 @@ Nézzünk egy nagyon egyszerű html oldalt:
 
 </HTML>
 ```
+A szövegbeviteli mezők speciális esete, amikor jelszót kérünk be erre külön elem van sajátossága, hogy a beírt karakterek helyett csak  pontok jelennek meg.
+A \<Select> elemmel lehet megvalósítani a legördükő menüt.  Az egyes űrlapelemeknél általában a **name** paraméternél megadott névvel tudjuk beazonosítani az adott elemet, a **value** paraméter képviseli az elemben megadott/kiválaszott stb. értéket.
+
+Írassuk ki az űrlapba beírt/kiválasztott értékeket!  A form onsubmit eseményénél szerepel már egy **formadatok()** nevű függvény, készítsük el!
+A \<SCRIPT> -be a következő kerüljön:
+```js
+ function formadatok()
+{
+   alert("A megadott név:"+document.regisztracio.nev.value);
+   alert("A jelszó hossza:"+document.regisztracio.password.value.length);
+   alert("A kiválaszott lakhely:"+document.regisztracio.lakhely.value);
+}
+```
