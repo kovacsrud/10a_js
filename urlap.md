@@ -56,3 +56,4 @@ A \<SCRIPT> -be a következő kerüljön:
    alert("A kiválaszott lakhely:"+document.regisztracio.lakhely.value);
 }
 ```
+Készen is van.
