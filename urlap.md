@@ -57,3 +57,7 @@ A \<SCRIPT> -be a következő kerüljön:
 }
 ```
 Készen is van.
+
+Az űrlapok elemeinek ellenőrzésére számos lehetőség van. Figyelhetjük, hogy a felhasználó nem hagyta-e üresen valamelyik mezőt. Ebben az esetben a benne lévő érték hossza (length) 0 lesz.
+
+Ellenőrizhetjük, hogy a jelszó elég hosszú-e, ha nem éri el a kívánt hosszúságot, hibaüzenetet adhatunk.
