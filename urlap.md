@@ -58,6 +58,28 @@ A \<SCRIPT> -be a következő kerüljön:
 ```
 Készen is van.
 
+### Űrlapok ellenőrzése
+
 Az űrlapok elemeinek ellenőrzésére számos lehetőség van. Figyelhetjük, hogy a felhasználó nem hagyta-e üresen valamelyik mezőt. Ebben az esetben a benne lévő érték hossza (length) 0 lesz.
 
 Ellenőrizhetjük, hogy a jelszó elég hosszú-e, ha nem éri el a kívánt hosszúságot, hibaüzenetet adhatunk.
+Így módosul a függvény az ellenőrzésekkel:
+
+```js
+ function formadatok()
+{
+ alert("A megadott név:"+document.regisztracio.nev.value);
+ if(document.regisztracio.nev.value.length==0)      
+ {
+        alert("A név mező nem lehet üres!");
+ }
+        alert("A jelszó hossza:"+document.regisztracio.password.value.length);
+            
+ if  (document.regisztracio.password.value.length<5)
+ {
+        alert("Túl rövid jelszó!")
+ }
+            
+        alert("A kiválaszott lakhely:"+document.regisztracio.lakhely.value);
+}
+```
