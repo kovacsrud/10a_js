@@ -70,3 +70,32 @@ td {
 
 </html>
 ```
+A **Kérjük regisztráljon** szöveg alá jön a form:
+
+```html
+ <form name="regform" action="dummy" onSubmit="return ellenoriz()">
+        <table>
+            <tr>
+                <td>Név:</td>
+                <td><input type="text" name="nev"></td>
+            </tr>
+            <tr>
+                <td>Életkor:</td>
+                <td><input type="text" name="kor"></td>
+            </tr>
+            <tr>
+                <td>Telefonszám:</td>
+                <td><input type="text" name="telefon"></td>
+            </tr>
+            <tr>
+                <td>E-mail cím:</td><td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>E-mail cím ismét:</td><td><input type="text" name="email_ismet"></td>
+            </tr>
+            <tr><td  colspan="2" align=center><input type="submit" name="go"></td></tr>
+        </table>
+
+    </form>
+```
+Látható, hogy az **action** mezőben nem szerepel semmilyen hivatkozás ami valamilyen feldolgozó programra mutatna. Ez azért van így, mert nem szeretnénk hibás adatokat küldeni, azért a feldolgozó programra való hivatkozást (ami most egy e-mail címre való elküldést fog jelenteni) csak akkor állítjuk be, ha a form minden mezője megfelelő adatokkal van kitöltve. Az **onSubmit** eseményhez van megadva az **ellenoriz()** függvény, **return ellenoriz()** formában. Ennek az eredménye egy logikai érték lesz.
