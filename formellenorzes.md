@@ -41,3 +41,32 @@ td {
     padding: 20px;
 }
 ```
+### Az alap weboldal a következő lesz:
+
+```html
+<html>
+
+<head>
+    <title>
+        Form ellenőrzés
+    </title>
+    <meta lang="hu" charset="utf-8">
+    <link rel=stylesheet type="text/css" href="regisztracio.css">
+
+</head>
+
+<body>
+    <h1>Regisztráció</h1>
+    <h2>Köszönjük érdeklődését!</h2>
+    <p>Kérjük, hogy regisztráljon, így mindig rendelkezésére álljanak a legfrissebb információk, illetve, hogy személyre szabott ajánlatokat állíthassunk össze az Ön részére!</p>
+    
+    
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>
+```
