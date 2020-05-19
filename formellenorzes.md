@@ -99,3 +99,23 @@ A **Kérjük regisztráljon** szöveg alá jön a form:
     </form>
 ```
 Látható, hogy az **action** mezőben nem szerepel semmilyen hivatkozás ami valamilyen feldolgozó programra mutatna. Ez azért van így, mert nem szeretnénk hibás adatokat küldeni, azért a feldolgozó programra való hivatkozást (ami most egy e-mail címre való elküldést fog jelenteni) csak akkor állítjuk be, ha a form minden mezője megfelelő adatokkal van kitöltve. Az **onSubmit** eseményhez van megadva az **ellenoriz()** függvény, **return ellenoriz()** formában. Ennek az eredménye egy logikai érték lesz.
+
+### Ellenőrző függvények
+A \<SCRIPT> tag ba kerüljenek a további JS kódok.
+Az első ellenőrző függvény azt vizsgálja, hogy az adott mező üres-e vagy sem. Ha üres, akkor dob egy hibát.
+
+```javascript
+   function uresMezo(mezo) {
+            var szoveg = mezo.value
+            if (szoveg == "") {
+
+                alert("A " + mezo.name + " mező nem lehet üres!")
+                return false;
+            } else {
+
+                return true;
+            }
+
+
+        }
+```
