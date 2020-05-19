@@ -147,3 +147,19 @@ function numerikusMezo(mezo) {
             }
         }
 ```
+Az e-mail címek ellenőrzésekor meg kell nézni, hogy a két mező tartalma egyezik-e (megegyeznek-e a megadott e-mail címek)
+
+```js
+function egyezomezok(mezo1, mezo2) {
+            
+            if (!uresMezo(mezo1)) return false;
+            if (!uresMezo(mezo2)) return false;
+            
+            if (mezo1.value == mezo2.value) {
+                return true;
+            } else {
+                alert("A két e-mail cím nem egyezik meg!")
+                return false;
+            }
+        }
+```
