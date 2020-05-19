@@ -102,7 +102,7 @@ Látható, hogy az **action** mezőben nem szerepel semmilyen hivatkozás ami va
 
 ### Ellenőrző függvények
 A \<SCRIPT> tag ba kerüljenek a további JS kódok.
-Az első ellenőrző függvény azt vizsgálja, hogy az adott mező üres-e vagy sem. Ha üres, akkor dob egy hibát.
+Az első ellenőrző függvény azt vizsgálja, hogy a paraméterben kapott mező üres-e vagy sem. Ha üres, akkor dob egy hibát.
 
 ```javascript
    function uresMezo(mezo) {
