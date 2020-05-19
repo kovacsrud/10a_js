@@ -102,6 +102,7 @@ Látható, hogy az **action** mezőben nem szerepel semmilyen hivatkozás ami va
 
 ### Ellenőrző függvények
 A \<SCRIPT> tag ba kerüljenek a további JS kódok.
+
 Az első ellenőrző függvény azt vizsgálja, hogy a paraméterben kapott mező üres-e vagy sem. Ha üres, akkor dob egy hibát.
 
 ```javascript
@@ -117,5 +118,32 @@ Az első ellenőrző függvény azt vizsgálja, hogy a paraméterben kapott mez�
             }
 
 
+        }
+```
+
+A következő függvény azt vizsgálja, hogy a paraméterben kapott adat megtalálható-e a szintén paraméterként kapott mintában:
+```js
+function tartalmaz(adat, minta) {
+            for (var i = 0; i < adat.length; i++) {
+                if (minta.indexOf(adat.charAt(i)) == -1) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+```
+
+Bizonyos mezők (pl. életkor) csak számot tartalmazhatnak. Ennek ellenőrzését végzi el a következő függvény:
+
+```js
+function numerikusMezo(mezo) {
+            if (!uresMezo(mezo)) return false;
+            if (tartalmaz(mezo.value, "0123456789")) {
+                return true;
+            } else {
+                alert("A " + mezo.name + " nevű mező csak számot tartalmazhat!")
+                return false;
+            }
         }
 ```
