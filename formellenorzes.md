@@ -186,3 +186,4 @@ function ellenoriz() {
             }
         }
 ```
+A weboldal jelen megvalósításában a mezőkben megadott e-mail címre próbálja meg elküldeni a form adatait. Akkor működik jól ez a form, ha betöltődik az op rendszer alap levelező programja.
