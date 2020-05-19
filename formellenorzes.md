@@ -163,3 +163,26 @@ function egyezomezok(mezo1, mezo2) {
             }
         }
 ```
+Végül, az egyes függvényeket egy olyan függvényben használjuk, amely elvégzi a mezők ellenőrzését, ezt a függvény hajtódik végre az onSubmit eseménykor (azaz, amikor a formnál az **Elküldés** gombra kattintunk. Az egyes függvények az és logikai művelettel vannak összekapcsolva.
+
+```js
+function ellenoriz() {
+            if (uresMezo(document.regform.nev) &&
+                numerikusMezo(document.regform.kor) &&
+                numerikusMezo(document.regform.telefon) &&
+                emailEll(document.regform.email) &&
+                emailEll(document.regform.email_ismet) &&
+                egyezomezok(document.regform.email, document.regform.email_ismet)
+            ) {
+
+                document.regform.action = "mailto:" + document.regform.email.value;
+
+                return true;
+
+
+            } else {
+                console.log("Error");
+                return false;
+            }
+        }
+```
